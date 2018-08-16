@@ -3,3 +3,8 @@
 ################################################################################
 
 /examples/nlog.examples.net45/bin/Debug
+/.vs
+/examples/nlog.examples.net45/obj
+/libs/win32
+/src/NLog.Kafka/obj
+/src/NLog.Kafka/bin/Debug

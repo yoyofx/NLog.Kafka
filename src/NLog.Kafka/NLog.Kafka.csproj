@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Authors>YOYOFx</Authors>
+    <Description>NLog .NET Client for Apache Kafka</Description>
+    <Copyright>Copyright 2017-2018 YOYOFx.</Copyright>
+    <PackageProjectUrl>https://github.com/maxzhang1985/NLog.Kafka</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/maxzhang1985/NLog.Kafka/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/confluentinc/confluent-kafka-dotnet/master/confluent_logo.png</PackageIconUrl>
+    <PackageTags>NLog;Kafka;Logstash</PackageTags>
+     <TargetFrameworks>net45;net46;netstandard1.6;</TargetFrameworks>
+  </PropertyGroup>
+ <ItemGroup>
+    <PackageReference Include="Confluent.Kafka" Version="0.11.5" />
+    <PackageReference Include="NLog" Version="4.5.8" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.3' ">
+    <PackageReference Include="Microsoft.CSharp" Version="4.3.0" />
+    <PackageReference Include="System.Threading" Version="4.3.0" />
+  </ItemGroup>
+</Project>
